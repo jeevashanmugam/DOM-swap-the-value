@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="text1" value="" placeholder="Type any thing"><br><br>
+    <input type="text" id="text2" value="" disabled>
+
+    <button id="btn">Click</button>
+ 
+    <script>
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", funName)
+
+        function funName(){
+            let inp = document.getElementById("text1").value
+            document.getElementById("text2").value = inp
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
